@@ -15,6 +15,7 @@ func main() {
 		c.JSON(http.StatusOK, gin.H {"status" : "Application Running." })
 	})
 	log.Println("Created Route...")
-	log.Println("Application Started...")
+	
 	router.Run(":8085")
+	log.Println("Application Started...")
 }
